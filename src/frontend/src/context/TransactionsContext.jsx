@@ -16,7 +16,7 @@ export const TransactionsProvider = ({ children }) => {
     if (!userId) return;
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5001/api/transactions/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/transactions/${userId}`);
       setTransactions(res.data || []);
     } catch (err) {
       console.error("Failed to fetch transactions:", err);
@@ -30,7 +30,7 @@ export const TransactionsProvider = ({ children }) => {
   const addTransaction = async (transaction) => {
     if (!userId) return;
     try {
-      await axios.post(`http://localhost:5001/api/transactions/${userId}`, transaction);
+      await axios.post(`https://moneyminder-3.onrender.com/api/transactions/${userId}`, transaction);
       await fetchTransactions(); // Refresh after adding
     } catch (err) {
       console.error("Failed to add transaction:", err);

@@ -54,7 +54,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve the React frontend
-const buildPath = path.join(__dirname, "../../frontend/build");
+const buildPath = path.join(__dirname, "../frontend/dist");
 app.use(express.static(buildPath));
 
 app.get("*", (req, res) => {

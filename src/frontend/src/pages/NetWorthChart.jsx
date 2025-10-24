@@ -24,7 +24,7 @@ const NetWorthChart = () => {
   const fetchInvestments = async () => {
     if (!userId) return;
     try {
-      const res = await axios.get(`http://localhost:5001/api/investments/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/investments/${userId}`);
       setInvestments(res.data);
     } catch (err) {
       console.error("Error fetching investments", err);

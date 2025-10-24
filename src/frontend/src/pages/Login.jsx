@@ -14,7 +14,7 @@ const Login = () => {
     if (!form.email || !form.password) return alert("Email and password are required");
 
     try {
-      const res = await axios.post("http://localhost:5001/api/login", form);
+      const res = await axios.post("https://moneyminder-3.onrender.com/api/login", form);
       console.log(res.data);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       alert("Login successful!");

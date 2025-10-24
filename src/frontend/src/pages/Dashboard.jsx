@@ -120,7 +120,7 @@ const Dashboard = () => {
   const fetchBudgets = async () => {
     if (!userId) return;
     try {
-      const res = await axios.get(`http://localhost:5001/api/budgets/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/budgets/${userId}`);
       setBudgets(res.data || []);
     } catch (err) {
       console.error("Failed to fetch budgets:", err);
@@ -130,7 +130,7 @@ const Dashboard = () => {
   const fetchInvestments = async () => {
     if (!userId) return;
     try {
-      const res = await axios.get(`http://localhost:5001/api/investments/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/investments/${userId}`);
       setInvestments(res.data || []);
     } catch (err) {
       console.error("Failed to fetch investments:", err);
@@ -140,7 +140,7 @@ const Dashboard = () => {
   const fetchGoals = async () => {
     if (!userId) return;
     try {
-      const res = await axios.get(`http://localhost:5001/api/goals/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/goals/${userId}`);
       setGoals(res.data || []);
     } catch (err) {
       console.error("Failed to fetch goals:", err);

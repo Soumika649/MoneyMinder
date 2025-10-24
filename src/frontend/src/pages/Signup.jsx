@@ -15,7 +15,7 @@ const Signup = () => {
     if (!form.fullName || !form.email || !form.password) return alert("All fields are required");
 
     try {
-      const res = await axios.post("http://localhost:5001/api/signup", form);
+      const res = await axios.post("https://moneyminder-3.onrender.com/api/signup", form);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       alert("Signup successful!");
       navigate("/dashboard");

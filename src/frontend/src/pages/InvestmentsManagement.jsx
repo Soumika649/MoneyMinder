@@ -36,7 +36,7 @@ const InvestmentsManagement = () => {
     setLoading(true);
 
     try {
-      const res = await axios.get(`http://localhost:5001/api/investments/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/investments/${userId}`);
       const data = res.data;
 
       // Preserve previous investments to avoid flashing charts
@@ -90,7 +90,7 @@ const InvestmentsManagement = () => {
         quantity: Number(form.quantity),
         buyPrice: Number(form.buyPrice),
       };
-      await axios.post(`http://localhost:5001/api/investments/${userId}`, payload);
+      await axios.post(`https://moneyminder-3.onrender.com/api/investments/${userId}`, payload);
       setForm({ symbol: "", quantity: "", buyPrice: "" });
       fetchInvestments();
     } catch (err) {

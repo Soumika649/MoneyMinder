@@ -30,7 +30,7 @@ const BudgetManagement = () => {
   const fetchBudgets = async () => {
     if (!userId) return;
     try {
-      const res = await axios.get(`http://localhost:5001/api/budgets/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/budgets/${userId}`);
       setBudgets(res.data || []);
     } catch (err) {
       console.error("Failed to fetch budgets:", err);
@@ -40,7 +40,7 @@ const BudgetManagement = () => {
   const fetchExpenses = async () => {
     if (!userId) return;
     try {
-      const res = await axios.get(`http://localhost:5001/api/transactions/${userId}`);
+      const res = await axios.get(`https://moneyminder-3.onrender.com/api/transactions/${userId}`);
       setExpenses(res.data || []);
     } catch (err) {
       console.error("Failed to fetch expenses:", err);
@@ -78,7 +78,7 @@ const BudgetManagement = () => {
 
     const newBudget = { ...budgetInput, userId, amount: Number(budgetInput.amount) };
     try {
-      await axios.post("http://localhost:5001/api/budgets", newBudget);
+      await axios.post("https://moneyminder-3.onrender.com/api/budgets", newBudget);
       setBudgetInput({ category: "", amount: "", startDate: "", endDate: "" });
       fetchBudgets();
       fetchExpenses();

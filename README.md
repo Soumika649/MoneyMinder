@@ -112,16 +112,6 @@ backend code- src/backend
 
 ---
 
-## 👩‍💻 Author
-
-**Soumika Myaka**  
-B.Tech CSE | Full Stack Developer Enthusiast  
-
-- GitHub: https://github.com/your-username  
-- LinkedIn: https://linkedin.com/in/your-profile  
-
----
-
 ## 📄 License
 
 This project is developed for learning, experimentation, and portfolio demonstration.

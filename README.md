@@ -82,3 +82,47 @@ This makes MoneyMinder a **holistic personal finance and wealth management appli
 frontend code- src/frontend/src  
 backend code- src/backend 
 !!! not the one in moneyminder it is an empty file
+
+
+> ⚠️ Note: Some files and modules are currently placeholders, created to support future features and maintain a scalable architecture.
+
+---
+
+## 🧠 Skills Demonstrated
+
+- MERN Stack full-stack development
+- REST API design
+- MongoDB schema planning
+- Scalable project architecture
+- Authentication & secure routing
+- Modular frontend/backend separation
+- Cloud deployment & environment management
+- Real-world project structuring
+
+---
+
+## 🔮 Planned Enhancements
+
+- Complete financial goal progress tracking
+- Real-time investment value via APIs
+- Advanced analytics & charts
+- AI-based saving suggestions
+- PDF & Excel export
+- Budget recommendations
+
+---
+
+## 👩‍💻 Author
+
+**Soumika Myaka**  
+B.Tech CSE | Full Stack Developer Enthusiast  
+
+- GitHub: https://github.com/your-username  
+- LinkedIn: https://linkedin.com/in/your-profile  
+
+---
+
+## 📄 License
+
+This project is developed for learning, experimentation, and portfolio demonstration.
+
